@@ -1,0 +1,62 @@
+  System.out.println("Choose your branch");
+        System.out.println("1 - Science, 2 - Humanitarian subjects, 3 - Art, 4 - Sport:");
+        int choice=in.nextInt();
+        switch (choice){
+            case 1:
+                System.out.println("1 : Math, 2 - Physics");
+                int choice2=in.nextInt();
+                if(choice2==1){
+                    System.out.println("You are Financer");
+                }else if(choice2==2){
+                    System.out.println("You are Engineer");
+                }
+                else{
+                    System.out.println("Wrong");
+                    break;
+
+                }
+            case 2:
+                System.out.println("1 - History, 2 - Foreign Languages:");
+                int choice4=in.nextInt();
+                if(choice4==1){
+                    System.out.println("You are Historic or Diplomat \n" +
+                            "\n ");
+                }
+                else if(choice4==2){
+                    System.out.println("You are Translator\n" +
+                            "\n");
+                }else{
+                    System.out.println("Wrong");
+                    break;
+                }
+            case 3:
+                System.out.println("1 - Drawing, 2 - Singing:");
+                int choice3=in.nextInt();
+                if(choice3==1){
+                    System.out.println("You are Painter or Architect\n" +
+                            "\n ");
+                }
+                else if(choice3==2){
+                    System.out.println("You are Singer or Tamada\n" +
+                            "\n");
+                }else{
+                    System.out.println("Wrong");
+                    break;
+                }
+            case 4:
+                System.out.println("1 - Team, 2 - Individual:");
+                int choice5=in.nextInt();
+                if(choice5==1){
+                    System.out.println("You are footballer or Basketball player\n" +
+                            "\n ");
+                }
+                else if(choice5==2){
+                    System.out.println("You are boxer or tennis player\n" +
+                            "\n");
+                }else{
+                    System.out.println("Wrong");
+                    break;
+                }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+import java.io.*;
+import java.util.*;
+
+public class MainDeserialize{
+
+	public static void main(String[] args) {
+		
+		try{
+
+			ObjectInputStream inStream = new ObjectInputStream(new FileInputStream("save.data"));		
+
+			ArrayList<User> users = (ArrayList<User>)inStream.readObject();
+			inStream.close();
+
+			System.out.println(users);
+
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+}

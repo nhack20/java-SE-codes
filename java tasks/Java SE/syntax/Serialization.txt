@@ -1,0 +1,23 @@
+public class MainSerialize{
+
+	public static void main(String[] args) {
+		
+		try{
+
+			User user = new User("Ilyas", "Almaty", 29);
+
+			ArrayList<User> users = new ArrayList<User>();
+			users.add(user);
+			users.add(new User("Asan", "Astana", 33));
+
+			ObjectOutputStream outStream = new ObjectOutputStream(new FileOutputStream("save.data"));
+			outStream.writeObject(users);
+			outStream.close();			
+
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+}
